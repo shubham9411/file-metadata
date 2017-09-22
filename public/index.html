@@ -1,5 +1,52 @@
-<p>Submit a file to view its filesize.</p>
-<form action="/get-file-size" method="post" enctype="multipart/form-data">
-  <input type="file" name="file">
-  <input type="submit">
-</form>
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <title>File Metadata API</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Freecodecamp Api and Microservice Projects: File Metadata Microservice" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <meta name="author" content="shubham pandey">
+  <style>body{font-family:'Roboto',sans-sarif;}</style>
+</head>
+
+<body>
+
+  <div class="container">
+    <h1>File Metadata API Docs - <a href="https://shubhampandey.in" target="_blank">Shubham Pandey</a></h1>
+    <h3>User Stories:</h3>
+    <blockquote>
+    <ol>
+      <li>You submit a Form that includes a file upload.</li>
+      <li>You get a JSON response with the uploaded file size in bytes.</li>
+    </ol>
+    </blockquote>
+    <h3>Example Usage:</h3>
+    <p>
+      Please Upload a File ...
+    </p>
+    <div class="fileForm">
+      <form method="post" action="/get-file-size" enctype="multipart/form-data">
+        <div class="form-group">
+          <input type="file" class="form-control" name="file">
+        </div>
+        <div>
+          <button type="submit" class="btn btn-primary">Upload File</button>
+        </div>
+      </form>
+    </div>
+
+    <h3>Example Output:</h3>
+    <pre>
+{ 
+  "filename": "profile.png",
+  "size": 2045 
+}
+    </pre>
+  </div>
+</body>
+
+</html>
