@@ -22,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/shubham9411/file-metadata/issues"
   },
-  "homepage": "https://github.com/shubham9411/file-metadata#readme"
+  "homepage": "https://github.com/shubham9411/file-metadata#readme",
+  "dependencies": {
+    "multer": "^1.3.0"
+  }
 }
